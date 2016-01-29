@@ -21,5 +21,5 @@ COPY dcos-cli.sh /usr/local/bin/dcos-cli.sh
 RUN /bin/bash /dcos-cli/config.sh
 RUN /bin/bash /dcos-cli/setup.sh
 
-ENTRYPOINT ["/usr/local/bin/dcos-cli.sh"]
-
+#ENTRYPOINT ["/usr/local/bin/dcos-cli.sh"]
+ENTRYPOINT ["/bin/bash"]
